@@ -16,6 +16,8 @@
 		BBAFCD9528E1CF37002DCC24 /* guessNumberGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFCD9428E1CF37002DCC24 /* guessNumberGameTests.swift */; };
 		BBAFCD9F28E1CF37002DCC24 /* guessNumberGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFCD9E28E1CF37002DCC24 /* guessNumberGameUITests.swift */; };
 		BBAFCDA128E1CF37002DCC24 /* guessNumberGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFCDA028E1CF37002DCC24 /* guessNumberGameUITestsLaunchTests.swift */; };
+		BBAFCDAE28E1D7CE002DCC24 /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFCDAD28E1D7CE002DCC24 /* GuessViewController.swift */; };
+		BBAFCDB028E1D7D5002DCC24 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAFCDAF28E1D7D5002DCC24 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BBAFCD9A28E1CF37002DCC24 /* guessNumberGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = guessNumberGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAFCD9E28E1CF37002DCC24 /* guessNumberGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessNumberGameUITests.swift; sourceTree = "<group>"; };
 		BBAFCDA028E1CF37002DCC24 /* guessNumberGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guessNumberGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BBAFCDAD28E1D7CE002DCC24 /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		BBAFCDAF28E1D7D5002DCC24 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				BBAFCD8628E1CF37002DCC24 /* Assets.xcassets */,
 				BBAFCD8828E1CF37002DCC24 /* LaunchScreen.storyboard */,
 				BBAFCD8B28E1CF37002DCC24 /* Info.plist */,
+				BBAFCDAD28E1D7CE002DCC24 /* GuessViewController.swift */,
+				BBAFCDAF28E1D7D5002DCC24 /* ResultViewController.swift */,
 			);
 			path = guessNumberGame;
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAFCDB028E1D7D5002DCC24 /* ResultViewController.swift in Sources */,
 				BBAFCD8228E1CF36002DCC24 /* ViewController.swift in Sources */,
 				BBAFCD7E28E1CF36002DCC24 /* AppDelegate.swift in Sources */,
+				BBAFCDAE28E1D7CE002DCC24 /* GuessViewController.swift in Sources */,
 				BBAFCD8028E1CF36002DCC24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

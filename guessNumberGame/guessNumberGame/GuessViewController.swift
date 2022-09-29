@@ -14,10 +14,13 @@ class GuessViewController: UIViewController {
     @IBOutlet weak var guessTextField: UITextField!
     
     var count:Int = 5
-    var randomNumber:Int = 6
+    var randomNumber:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        randomNumber = Int.random(in: 1...10)
+        print(randomNumber!)
 
         remainLabel.text = "remain time : \(count)"
     }
@@ -31,7 +34,7 @@ class GuessViewController: UIViewController {
         } else {
             guessLabel.text = "girdi"
             if let temp = Int(guessTextField.text!) {
-                if temp == randomNumber {
+                if temp == randomNumber! {
                     let message = "Won"
                     performSegue(withIdentifier: "showResult", sender: message)
                     

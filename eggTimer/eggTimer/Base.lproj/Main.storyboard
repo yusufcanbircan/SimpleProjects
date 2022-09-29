@@ -24,52 +24,50 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGU-4q-hOE">
                                 <rect key="frame" x="50" y="214" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="MHf-5X-RX2"/>
                                     <constraint firstAttribute="width" constant="150" id="Yh5-mb-HS5"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="dynamic"/>
+                                <buttonConfiguration key="configuration" style="plain" image="egg1" imagePlacement="bottom" imagePadding="0.0" cornerStyle="medium">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="button1Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBe-Gq-bhE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVr-OY-HvN">
                                 <rect key="frame" x="230" y="214" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="lfF-yF-lJN"/>
                                     <constraint firstAttribute="width" constant="150" id="wqq-Xm-0AT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="egg2"/>
                                 <connections>
                                     <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jP7-1l-ADZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNZ-tW-mkv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNZ-tW-mkv">
                                 <rect key="frame" x="50" y="399" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="A5H-9U-eLM"/>
                                     <constraint firstAttribute="width" constant="150" id="Gf6-Uj-iAD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="egg3"/>
                                 <connections>
                                     <action selector="button3Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQF-GT-Z4u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w48-KR-Weg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w48-KR-Weg">
                                 <rect key="frame" x="230" y="399" width="150" height="150"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="PNn-p0-ROL"/>
                                     <constraint firstAttribute="height" constant="150" id="p9a-QU-lbB"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="egg4"/>
                                 <connections>
                                     <action selector="button4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbT-XY-Ic1"/>
                                 </connections>
@@ -186,6 +184,7 @@
                     <navigationItem key="navigationItem" id="eXh-Mb-J0H"/>
                     <connections>
                         <outlet property="imageView" destination="5Ch-5m-WgD" id="MJr-gb-fXS"/>
+                        <outlet property="messageLabel" destination="lAX-n7-bK4" id="3Bh-cL-o4m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wm8-EJ-qYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -213,11 +212,12 @@
     </scenes>
     <resources>
         <image name="arrowtriangle.forward.fill" catalog="system" width="128" height="113"/>
+        <image name="egg1" width="250" height="250"/>
+        <image name="egg2" width="250" height="250"/>
+        <image name="egg3" width="250" height="250"/>
+        <image name="egg4" width="250" height="250"/>
         <image name="pause.fill" catalog="system" width="117" height="128"/>
         <image name="stop.fill" catalog="system" width="128" height="113"/>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

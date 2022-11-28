@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Flag Quiz App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl2-Cb-hcx">
-                                <rect key="frame" x="69" y="253" width="255" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <rect key="frame" x="64.333333333333343" y="253" width="264.66666666666663" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -84,6 +84,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button1"/>
+                                <connections>
+                                    <action selector="button1:" destination="Sm1-TH-Nzy" eventType="touchUpInside" id="bg2-Hj-TZF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53I-np-xfT">
                                 <rect key="frame" x="76.666666666666686" y="533" width="240" height="35"/>
@@ -93,6 +96,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button2"/>
+                                <connections>
+                                    <action selector="button2:" destination="Sm1-TH-Nzy" eventType="touchUpInside" id="5HB-OM-S68"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woz-Le-gBs">
                                 <rect key="frame" x="76.666666666666686" y="576" width="240" height="35"/>
@@ -102,6 +108,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button3"/>
+                                <connections>
+                                    <action selector="button3:" destination="Sm1-TH-Nzy" eventType="touchUpInside" id="De0-Ml-B2u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-xX-yBR">
                                 <rect key="frame" x="76.666666666666686" y="619" width="240" height="35"/>
@@ -111,6 +120,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button4"/>
+                                <connections>
+                                    <action selector="button4:" destination="Sm1-TH-Nzy" eventType="touchUpInside" id="0aV-Nj-qf9"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="almanya" translatesAutoresizingMaskIntoConstraints="NO" id="kQO-3I-Z3u">
                                 <rect key="frame" x="76.666666666666686" y="275" width="240" height="159"/>
@@ -143,7 +155,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Quiz" id="56l-b2-OXy"/>
                     <connections>
-                        <segue destination="85b-tp-idG" kind="show" id="mEu-7M-Pl2"/>
+                        <outlet property="button1Label" destination="xgo-92-fqt" id="0ML-xe-bVD"/>
+                        <outlet property="button2Label" destination="53I-np-xfT" id="89R-z3-bbJ"/>
+                        <outlet property="button3LAbel" destination="woz-Le-gBs" id="UsR-lb-TbL"/>
+                        <outlet property="button4Label" destination="q0E-xX-yBR" id="cNi-cN-JgK"/>
+                        <outlet property="falseLabel" destination="fCK-WJ-BX0" id="2Ez-dT-sZw"/>
+                        <outlet property="flagImageView" destination="kQO-3I-Z3u" id="OsW-qD-sQ5"/>
+                        <outlet property="questionLabel" destination="fWa-lx-Yg1" id="0hc-fk-cqF"/>
+                        <outlet property="trueLabel" destination="d1o-w6-LNu" id="Weo-Fo-P0r"/>
+                        <segue destination="85b-tp-idG" kind="show" identifier="toResultScreen" id="mEu-7M-Pl2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAp-19-5f3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,14 +178,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 TRUE 3 FALSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjL-nm-P0F">
-                                <rect key="frame" x="87" y="198" width="218" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 TRUE 3 FALSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjL-nm-P0F">
+                                <rect key="frame" x="87" y="198" width="226" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%20 Correctness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbt-6b-v2n">
-                                <rect key="frame" x="101" y="289" width="190" height="29"/>
+                                <rect key="frame" x="101" y="289" width="202" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
@@ -174,6 +194,9 @@
                                 <rect key="frame" x="145" y="502" width="103" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgainButton:" destination="85b-tp-idG" eventType="touchUpInside" id="Rq7-2k-brK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dfc-OH-pTX"/>
@@ -185,12 +208,16 @@
                             <constraint firstItem="t81-0v-8GT" firstAttribute="top" secondItem="qbt-6b-v2n" secondAttribute="bottom" constant="184" id="QoP-EA-Izh"/>
                             <constraint firstItem="qbt-6b-v2n" firstAttribute="top" secondItem="AjL-nm-P0F" secondAttribute="bottom" constant="55" id="QwA-Z2-LtV"/>
                             <constraint firstItem="t81-0v-8GT" firstAttribute="leading" secondItem="dfc-OH-pTX" secondAttribute="leading" constant="145" id="cwZ-bF-kM0"/>
-                            <constraint firstItem="dfc-OH-pTX" firstAttribute="trailing" secondItem="qbt-6b-v2n" secondAttribute="trailing" constant="102" id="fe6-b6-ZVf"/>
+                            <constraint firstItem="dfc-OH-pTX" firstAttribute="trailing" secondItem="qbt-6b-v2n" secondAttribute="trailing" constant="90" id="fe6-b6-ZVf"/>
                             <constraint firstItem="dfc-OH-pTX" firstAttribute="trailing" secondItem="t81-0v-8GT" secondAttribute="trailing" constant="145" id="mzL-oQ-dtz"/>
-                            <constraint firstItem="dfc-OH-pTX" firstAttribute="trailing" secondItem="AjL-nm-P0F" secondAttribute="trailing" constant="88" id="wTI-sA-ehr"/>
+                            <constraint firstItem="dfc-OH-pTX" firstAttribute="trailing" secondItem="AjL-nm-P0F" secondAttribute="trailing" constant="80" id="wTI-sA-ehr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SMu-5O-T7w"/>
+                    <connections>
+                        <outlet property="correctnessLabel" destination="qbt-6b-v2n" id="hUX-H3-SWP"/>
+                        <outlet property="trueFalseLabel" destination="AjL-nm-P0F" id="1RV-nn-Zw2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bY7-I8-wmJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

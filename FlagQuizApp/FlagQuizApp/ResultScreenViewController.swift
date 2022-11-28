@@ -8,22 +8,25 @@
 import UIKit
 
 class ResultScreenViewController: UIViewController {
-
+    
+    @IBOutlet weak var trueFalseLabel: UILabel!
+    @IBOutlet weak var correctnessLabel: UILabel!
+    
+    var trueResult: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //// Hiding Back button
+        navigationItem.hidesBackButton = true
+        
+        if let trueResult {
+            trueFalseLabel.text = "\(trueResult) TRUE \(5-trueResult) FALSE"
+            correctnessLabel.text = "% \(trueResult*100/5) Correctness"
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func playAgainButton(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
     }
-    */
 
 }

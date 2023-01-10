@@ -13,11 +13,15 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var englishLabel: UILabel!
     @IBOutlet weak var turkishLabel: UILabel!
     
+    var word: Word?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let word {
+            englishLabel.text = word.ingilizce
+            turkishLabel.text = word.turkce
+        }
     }
     
 

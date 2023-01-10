@@ -20,19 +20,24 @@ class ViewController: UIViewController {
         //// Copying Database
         copyDatabase()
         
-        words.append(Word(kelime_id: 1, ingilizce: "door", turkce: "kapi"))
-        words.append(Word(kelime_id: 2, ingilizce: "apple", turkce: "elma"))
-        words.append(Word(kelime_id: 3, ingilizce: "floor", turkce: "kat"))
-        
-        
         tableView.delegate = self
         tableView.dataSource = self
         
         searchBar.delegate = self
         
+        words = WordDao().fetchAllData()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toResultViewController" {
+            if let index = sender as? Int {
+                let vc = segue.destination as! ResultViewController
+                
+                vc.word = words[index]
+            }
+        }
         
     }
     
@@ -83,7 +88,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("\(searchText)")
+        words = WordDao().searchInData(searchText: searchText)
+        
+        tableView.reloadData()
     }
     
 }

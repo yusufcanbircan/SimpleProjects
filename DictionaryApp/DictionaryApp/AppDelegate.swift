@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  flagQuiz
+//  DictionaryApp
 //
-//  Created by Yusuf Can Bircan on 24.11.2022.
+//  Created by Yusuf Can Bircan on 28.11.2022.
 //
 
 import UIKit

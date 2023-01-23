@@ -13,6 +13,12 @@
 		BBD125CF297ED76F00559A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD125CD297ED76F00559A30 /* Main.storyboard */; };
 		BBD125D1297ED77000559A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD125D0297ED77000559A30 /* Assets.xcassets */; };
 		BBD125D4297ED77000559A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD125D2297ED77000559A30 /* LaunchScreen.storyboard */; };
+		BBD125DD297ED78500559A30 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BBD125DC297ED78500559A30 /* Alamofire */; };
+		BBD125DF297EDAFB00559A30 /* GradesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD125DE297EDAFB00559A30 /* GradesTableViewCell.swift */; };
+		BBD125E1297EDCBC00559A30 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD125E0297EDCBC00559A30 /* AddNewViewController.swift */; };
+		BBD125E3297EDCC500559A30 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD125E2297EDCC500559A30 /* EditViewController.swift */; };
+		BBD125E5297EEAD400559A30 /* Notlar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD125E4297EEAD400559A30 /* Notlar.swift */; };
+		BBD125E7297EEB6900559A30 /* NotlarCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD125E6297EEB6900559A30 /* NotlarCevap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		BBD125D0297ED77000559A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBD125D3297ED77000559A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBD125D5297ED77000559A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD125DE297EDAFB00559A30 /* GradesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesTableViewCell.swift; sourceTree = "<group>"; };
+		BBD125E0297EDCBC00559A30 /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		BBD125E2297EDCC500559A30 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		BBD125E4297EEAD400559A30 /* Notlar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notlar.swift; sourceTree = "<group>"; };
+		BBD125E6297EEB6900559A30 /* NotlarCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotlarCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD125DD297ED78500559A30 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,11 @@
 				BBD125D0297ED77000559A30 /* Assets.xcassets */,
 				BBD125D2297ED77000559A30 /* LaunchScreen.storyboard */,
 				BBD125D5297ED77000559A30 /* Info.plist */,
+				BBD125DE297EDAFB00559A30 /* GradesTableViewCell.swift */,
+				BBD125E0297EDCBC00559A30 /* AddNewViewController.swift */,
+				BBD125E2297EDCC500559A30 /* EditViewController.swift */,
+				BBD125E4297EEAD400559A30 /* Notlar.swift */,
+				BBD125E6297EEB6900559A30 /* NotlarCevap.swift */,
 			);
 			path = GradesAppAlamofire;
 			sourceTree = "<group>";
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = GradesAppAlamofire;
+			packageProductDependencies = (
+				BBD125DC297ED78500559A30 /* Alamofire */,
+			);
 			productName = GradesAppAlamofire;
 			productReference = BBD125C4297ED76F00559A30 /* GradesAppAlamofire.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = BBD125BB297ED76F00559A30;
+			packageReferences = (
+				BBD125DB297ED78500559A30 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = BBD125C5297ED76F00559A30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD125E1297EDCBC00559A30 /* AddNewViewController.swift in Sources */,
+				BBD125E5297EEAD400559A30 /* Notlar.swift in Sources */,
 				BBD125CC297ED76F00559A30 /* ViewController.swift in Sources */,
+				BBD125E7297EEB6900559A30 /* NotlarCevap.swift in Sources */,
+				BBD125E3297EDCC500559A30 /* EditViewController.swift in Sources */,
+				BBD125DF297EDAFB00559A30 /* GradesTableViewCell.swift in Sources */,
 				BBD125C8297ED76F00559A30 /* AppDelegate.swift in Sources */,
 				BBD125CA297ED76F00559A30 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBD125DB297ED78500559A30 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBD125DC297ED78500559A30 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBD125DB297ED78500559A30 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBD125BC297ED76F00559A30 /* Project object */;
 }

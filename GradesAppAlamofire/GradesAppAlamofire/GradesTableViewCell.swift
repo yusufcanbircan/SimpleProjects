@@ -9,6 +9,11 @@ import UIKit
 
 class GradesTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet var courseName: UILabel!
+    @IBOutlet var grade1: UILabel!
+    @IBOutlet var grade2: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

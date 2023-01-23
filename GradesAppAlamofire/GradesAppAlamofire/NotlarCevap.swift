@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class NotlarCevap:Codable {
+    var notlar: [Notlar]?
+    var success: Int?
+}

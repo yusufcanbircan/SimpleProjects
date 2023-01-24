@@ -24,14 +24,17 @@ class ViewController: UIViewController {
         
         ref = Database.database().reference()
         
-        /*var kategori = Kategoriler(kategori_id: "", kategori_ad: "Sci-Fi")
-        var dict: [String: Any] = ["kategori_id": kategori.kategori_id!, "kategori_ad":kategori.kategori_ad!]
-        ref?.child("kategoriler").childByAutoId().setValue(dict)
-        
-        kategori = Kategoriler(kategori_id: "", kategori_ad: "comedy")
-        dict = ["kategori_id": kategori.kategori_id!, "kategori_ad":kategori.kategori_ad!]
-        ref?.child("kategoriler").childByAutoId().setValue(dict)*/
         fetchAllCategory()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toMovies" {
+            if let index = sender as? Int {
+                
+                let vc = segue.destination as! MoviesViewController
+                vc.category = categories[index].kategori_ad
+            }
+        }
     }
     
     

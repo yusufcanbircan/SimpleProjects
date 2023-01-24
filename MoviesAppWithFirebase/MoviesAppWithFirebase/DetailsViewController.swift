@@ -21,7 +21,14 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
 
         if let movie {
-            imageView.image = UIImage(named: movie.film_resim!)
+            if let url = URL(string: "http://kasimadalan.pe.hu/filmler/resimler/\(movie.film_resim!).png") {
+                DispatchQueue.global().async {
+                    let data = try? Data(contentsOf: url)
+                    DispatchQueue.main.async {
+                        self.imageView.image = UIImage(data: data!)
+                    }
+                }
+            }
             nameLabel.text = movie.film_ad
             categoryLabel.text = movie.kategori_ad
             releaseDateLabel.text = "\(movie.film_yil!)"

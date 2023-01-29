@@ -14,6 +14,10 @@
 		BB8851F82986B55200ED1ED4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8851F62986B55200ED1ED4 /* MainViewController.xib */; };
 		BB8852022986BF6000ED1ED4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8852012986BF6000ED1ED4 /* MainViewModel.swift */; };
 		BB8852042986BFBF00ED1ED4 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8852032986BFBF00ED1ED4 /* MainViewController+TableView.swift */; };
+		BB8852062986C82E00ED1ED4 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8852052986C82E00ED1ED4 /* NetworkConstant.swift */; };
+		BB8852082986CD1C00ED1ED4 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8852072986CD1C00ED1ED4 /* APICaller.swift */; };
+		BB88520A2986CD5D00ED1ED4 /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8852092986CD5D00ED1ED4 /* TrendingMoviesModel.swift */; };
+		BB88520C2986EFDC00ED1ED4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88520B2986EFDC00ED1ED4 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		BB8851F62986B55200ED1ED4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		BB8852012986BF6000ED1ED4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		BB8852032986BFBF00ED1ED4 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		BB8852052986C82E00ED1ED4 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		BB8852072986CD1C00ED1ED4 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		BB8852092986CD5D00ED1ED4 /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
+		BB88520B2986EFDC00ED1ED4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 		BB8851FC2986B98500ED1ED4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB8852092986CD5D00ED1ED4 /* TrendingMoviesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +125,7 @@
 		BB8851FD2986B98E00ED1ED4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BB88520B2986EFDC00ED1ED4 /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -138,6 +148,8 @@
 		BB8852002986B9A600ED1ED4 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BB8852052986C82E00ED1ED4 /* NetworkConstant.swift */,
+				BB8852072986CD1C00ED1ED4 /* APICaller.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -213,10 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB88520C2986EFDC00ED1ED4 /* Observable.swift in Sources */,
 				BB8851E12986B39900ED1ED4 /* AppDelegate.swift in Sources */,
+				BB8852082986CD1C00ED1ED4 /* APICaller.swift in Sources */,
 				BB8851F72986B55200ED1ED4 /* MainViewController.swift in Sources */,
 				BB8852022986BF6000ED1ED4 /* MainViewModel.swift in Sources */,
+				BB8852062986C82E00ED1ED4 /* NetworkConstant.swift in Sources */,
 				BB8852042986BFBF00ED1ED4 /* MainViewController+TableView.swift in Sources */,
+				BB88520A2986CD5D00ED1ED4 /* TrendingMoviesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
